@@ -50,7 +50,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className={styles.brandDesc}>
-              A premier United Kingdom technology and business services consultancy. Strategically partnered with {india.company}, to deliver intelligent, scalable, and high-impact digital solutions.
+              Grace Technologies provides AI automation solutions for businesses in partnership with {india.company}, helping streamline workflows and improve operational efficiency.
             </p>
             <div className={styles.partnerBadge}>
               <span className={styles.partnerDot} />
@@ -85,23 +85,8 @@ export default function Footer() {
             <p className={styles.colTitle}>Services</p>
             <ul className={styles.linkList}>
               <li>
-                <Link href="/services/website-development" className={styles.footerLink}>
-                  Website Development
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/merchant-account-management" className={styles.footerLink}>
-                  Merchant Account Management
-                </Link>
-              </li>
-              <li>
                 <Link href="/services/ai-automation" className={styles.footerLink}>
                   AI Automation
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/digital-marketing" className={styles.footerLink}>
-                  Digital Marketing
                 </Link>
               </li>
               <li>

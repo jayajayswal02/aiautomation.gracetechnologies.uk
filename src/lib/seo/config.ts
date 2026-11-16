@@ -1,24 +1,25 @@
 /**
  * Central SEO Configuration for Grace Technologies
- * Primary canonical domain: https://www.gracetechnologies.uk
+ * Primary canonical domain: https://aiautomation.gracetechnologies.uk
  */
 
 export const SEO_CONFIG = {
   siteName: 'Grace Technologies',
   legalName: 'Grace Technologies',
-  siteUrl: 'https://www.gracetechnologies.uk',
+  siteUrl: 'https://aiautomation.gracetechnologies.uk',
+  mainSiteUrl: 'https://www.gracetechnologies.uk',
   appleTouchIcon: '/apple-touch-icon.png',
-  defaultTitle: 'Grace Technologies | Digital & Technology Solutions',
+  defaultTitle: 'AI Automation Services UK | Grace Technologies',
   titleTemplate: '%s | Grace Technologies',
   defaultDescription:
-    'A UK-led technology partner offering website development, merchant account management, AI automation & digital marketing solutions for growing businesses.',
-  defaultOgImage: 'https://www.gracetechnologies.uk/logo/logo.png',
+    'Grace Technologies delivers AI automation solutions for UK businesses, helping streamline workflows, automate repetitive tasks and improve operational efficiency.',
+  defaultOgImage: 'https://aiautomation.gracetechnologies.uk/logo/logo.png',
   locale: 'en_GB',
   inLocale: 'en_IN',
   language: 'en',
   themeColor: '#030712',
-  organizationId: 'https://www.gracetechnologies.uk/#organization',
-  websiteId: 'https://www.gracetechnologies.uk/#website',
+  organizationId: 'https://aiautomation.gracetechnologies.uk/#organization',
+  websiteId: 'https://aiautomation.gracetechnologies.uk/#website',
   contact: {
     uk: {
       company: 'Grace Technologies',
@@ -60,36 +61,14 @@ export const SEO_CONFIG = {
     'https://www.facebook.com/share/1CKuqfF3Ef/',
     'https://www.youtube.com/@Gracetechnologiesofficial',
     'https://x.com/grace_Official4',
-    'https://www.linkedin.com/',
   ],
   services: [
     {
-      id: 'website-development',
-      name: 'Website Development',
-      url: 'https://www.gracetechnologies.uk/services/website-development',
-      description:
-        'Custom business websites, Next.js web applications, e-commerce architectures, and technical performance engineering.',
-    },
-    {
-      id: 'merchant-account-management',
-      name: 'Merchant Account Management',
-      url: 'https://www.gracetechnologies.uk/services/merchant-account-management',
-      description:
-        'Professional merchant onboarding assistance, multi-currency payment operations support, and gateway integrations.',
-    },
-    {
       id: 'ai-automation',
       name: 'AI Automation',
-      url: 'https://www.gracetechnologies.uk/services/ai-automation',
+      url: 'https://aiautomation.gracetechnologies.uk/services/ai-automation',
       description:
-        'Intelligent business process automation, autonomous agentic workflows, CRM integrations, and predictive pipelines.',
-    },
-    {
-      id: 'digital-marketing',
-      name: 'Digital Marketing & SEO',
-      url: 'https://www.gracetechnologies.uk/services/digital-marketing',
-      description:
-        'Data-driven organic search engine optimisation (SEO), Generative Engine Optimisation (GEO), and omnichannel ad campaigns.',
+        'AI workflow automation, business process optimization, intelligent chatbots, and custom AI integration for businesses.',
     },
   ],
 } as const;

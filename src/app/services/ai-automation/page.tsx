@@ -1,5 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
+import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
+import SmartToyOutlinedIcon from '@mui/icons-material/SmartToyOutlined';
+import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
+import DatasetOutlinedIcon from '@mui/icons-material/DatasetOutlined';
+import PersonSearchOutlinedIcon from '@mui/icons-material/PersonSearchOutlined';
+import IntegrationInstructionsOutlinedIcon from '@mui/icons-material/IntegrationInstructionsOutlined';
+import TuneOutlinedIcon from '@mui/icons-material/TuneOutlined';
 import Container from '@/components/common/Container/Container';
 import SectionHeading from '@/components/common/SectionHeading/SectionHeading';
 import ServiceDetailHero from '@/components/sections/ServiceDetailHero/ServiceDetailHero';
@@ -13,28 +21,96 @@ import { SEO_CONFIG } from '@/lib/seo/config';
 import { SERVICES_DATA } from '@/config/site';
 import styles from '../service-page.module.css';
 
-const service = SERVICES_DATA[2]; // AI Automation
+const service = SERVICES_DATA[0];
 
 export const metadata: Metadata = constructMetadata({
-  title: 'AI Automation Services UK',
+  title: 'AI Automation Solutions for Businesses',
+  titleSuffix: 'Grace Technologies UK',
   description:
-    'Automate repetitive work with AI workflows, CRM integrations and document processing. Grace Technologies helps UK businesses save time and reduce manual tasks.',
+    'Discover AI automation services from Grace Technologies, including workflow automation, intelligent chatbots, business process automation and custom AI integration.',
   canonicalPath: '/services/ai-automation',
   keywords: [
-    'AI automation services UK',
-    'Business process automation',
-    'AI workflow automation',
-    'AI integration services',
-    'Intelligent business automation',
-    'Custom AI solutions',
+    'AI Automation Services UK',
+    'AI Automation Company UK',
+    'AI Automation Solutions',
+    'Business Process Automation',
+    'AI Workflow Automation',
+    'AI Solutions for Businesses',
+    'Intelligent Business Automation',
+    'AI Chatbot Solutions',
+    'Customer Support Automation',
+    'Workflow Automation Services',
+    'Repetitive Task Automation',
+    'AI-powered Business Solutions',
+    'Business Process Optimization',
+    'Custom AI Integration',
   ],
 });
 
+const features = [
+  {
+    title: 'Business Process Automation',
+    description:
+      'Automate repetitive, rules-based processes to reduce manual handling and help teams focus on higher-value work.',
+    benefits: ['Reduce routine administration', 'Make repeatable processes more consistent'],
+    Icon: AccountTreeOutlinedIcon,
+  },
+  {
+    title: 'AI-Powered Workflow Automation',
+    description:
+      'Connect business tools and add AI-assisted steps, with clear review points for decisions that need human oversight.',
+    benefits: ['Reduce manual hand-offs', 'Keep people involved in important decisions'],
+    Icon: AutoAwesomeOutlinedIcon,
+  },
+  {
+    title: 'Intelligent Chatbots & Virtual Assistants',
+    description:
+      'Create conversational assistants that answer common questions and guide users through well-defined tasks.',
+    benefits: ['Provide consistent answers to common questions', 'Help users find the right information'],
+    Icon: SmartToyOutlinedIcon,
+  },
+  {
+    title: 'Customer Support Automation',
+    description:
+      'Help support teams categorise requests, find relevant information and route enquiries to the right people.',
+    benefits: ['Organise incoming support requests', 'Help teams respond with relevant information'],
+    Icon: SupportAgentOutlinedIcon,
+  },
+  {
+    title: 'Data Processing Automation',
+    description:
+      'Automate structured data extraction, validation and transfer between approved business systems.',
+    benefits: ['Reduce repetitive data entry', 'Improve consistency across connected systems'],
+    Icon: DatasetOutlinedIcon,
+  },
+  {
+    title: 'Lead Management Automation',
+    description:
+      'Organise incoming enquiries, apply agreed qualification rules and route leads to the appropriate team.',
+    benefits: ['Keep enquiries organised', 'Help teams follow up through a consistent process'],
+    Icon: PersonSearchOutlinedIcon,
+  },
+  {
+    title: 'Custom AI Integration',
+    description:
+      'Plan and implement AI capabilities that work with your existing processes and selected software.',
+    benefits: ['Fit implementation to current systems', 'Define scope and safeguards before deployment'],
+    Icon: IntegrationInstructionsOutlinedIcon,
+  },
+  {
+    title: 'Custom AI Automation Solutions',
+    description:
+      'Design tailored automation around your business requirements, with defined scope and human review where needed.',
+    benefits: ['Address specific operational needs', 'Include review steps for exceptions and edge cases'],
+    Icon: TuneOutlinedIcon,
+  },
+];
+
 export default function AiAutomationPage() {
   const serviceSchema = getServiceSchema({
-    name: 'AI Automation & Intelligent Workflow Services',
+    name: 'AI Automation',
     description:
-      'Enterprise business process automation, autonomous agentic reasoning, CRM integration, and intelligent predictive data workflows.',
+      'AI automation solutions for businesses, including workflow automation, intelligent chatbots, business process automation and custom AI integration.',
     url: `${SEO_CONFIG.siteUrl}/services/ai-automation`,
     serviceType: 'AI Automation',
   });
@@ -44,10 +120,7 @@ export default function AiAutomationPage() {
     { name: 'Services', url: `${SEO_CONFIG.siteUrl}/services` },
     { name: 'AI Automation', url: `${SEO_CONFIG.siteUrl}/services/ai-automation` },
   ]);
-
-  const faqSchema = getFaqSchema(
-    service.faqs ? service.faqs.map((f) => ({ question: f.question, answer: f.answer })) : []
-  );
+  const faqSchema = getFaqSchema(service.faqs);
 
   return (
     <div className={styles.page}>
@@ -61,7 +134,6 @@ export default function AiAutomationPage() {
         backLabel="Back to Services"
       />
 
-      {/* Hero with Visual */}
       <ServiceDetailHero
         serviceId={service.id}
         serviceTitle={service.title}
@@ -71,130 +143,104 @@ export default function AiAutomationPage() {
         description={service.description}
       />
 
-      {/* Interactive Workflow Visual Section */}
-      <section style={{ backgroundColor: 'var(--color-surface)', padding: '3.5rem 0', borderBottom: '1px solid var(--color-glass-medium)' }}>
-        <Container size="wide">
-          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-            <span style={{ fontSize: '0.6875rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--color-accent)', padding: '0.25rem 0.75rem', background: 'var(--color-secondary)', borderRadius: '9999px', border: '1px solid var(--color-border-soft)' }}>
-              INTELLIGENT PIPELINE ARCHITECTURE
-            </span>
-            <h3 style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--color-accent)', marginTop: '1rem' }}>
-              From Raw Unstructured Data to Autonomous Execution
-            </h3>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.25rem' }}>
-            <div style={{ background: 'var(--color-secondary)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--color-glass-medium)' }}>
-              <span style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', fontWeight: 700 }}>01 // INGESTION</span>
-              <h4 style={{ color: 'var(--color-accent)', fontSize: '1.1rem', margin: '0.5rem 0' }}>Multi-Modal Inputs</h4>
-              <p style={{ fontSize: '0.8125rem', color: 'var(--color-text-secondary)', margin: 0 }}>PDFs, invoices, emails, webhook payloads, CRM events and database logs.</p>
-            </div>
-            <div style={{ background: 'var(--color-secondary)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--color-glass-medium)' }}>
-              <span style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', fontWeight: 700 }}>02 // PARSING & EMBEDDING</span>
-              <h4 style={{ color: 'var(--color-accent)', fontSize: '1.1rem', margin: '0.5rem 0' }}>Semantic Vectorization</h4>
-              <p style={{ fontSize: '0.8125rem', color: 'var(--color-text-secondary)', margin: 0 }}>Zero-data-retention embedding models index and structure unstructured business text.</p>
-            </div>
-            <div style={{ background: 'var(--color-secondary)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--color-glass-medium)' }}>
-              <span style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', fontWeight: 700 }}>03 // REASONING & VALIDATION</span>
-              <h4 style={{ color: 'var(--color-accent)', fontSize: '1.1rem', margin: '0.5rem 0' }}>Agentic Logic</h4>
-              <p style={{ fontSize: '0.8125rem', color: 'var(--color-text-secondary)', margin: 0 }}>Configured business rules evaluate confidence thresholds with human oversight gates.</p>
-            </div>
-            <div style={{ background: 'var(--color-secondary)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--color-glass-medium)' }}>
-              <span style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', fontWeight: 700 }}>04 // ACTION</span>
-              <h4 style={{ color: 'var(--color-accent)', fontSize: '1.1rem', margin: '0.5rem 0' }}>Automated Dispatch</h4>
-              <p style={{ fontSize: '0.8125rem', color: 'var(--color-text-secondary)', margin: 0 }}>Instant database updates, ERP transactions, customer notifications and reports.</p>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Capabilities Section */}
       <section id="capabilities" className={styles.section}>
         <Container size="wide">
           <SectionHeading
-            label="AUTOMATION ENGINE"
-            title="Practical AI Built for Enterprise Velocity."
-            description="We engineer reliable autonomous agents, data pipelines, and workflow connectors that run securely 24/7."
+            label="AI AUTOMATION SERVICES"
+            title="AI Automation Services"
+            description="We scope business process and AI-powered workflow automation around your existing systems, tasks and operational requirements."
             align="left"
           />
-
           <div className={styles.capabilitiesGrid}>
-            {service.capabilities.map((cap) => (
-              <div key={cap.title} className={styles.capCard}>
+            {features.map(({ title, description, benefits, Icon }) => (
+              <article key={title} className={styles.capCard}>
                 <div className={styles.capHeader}>
-                  <div className={styles.capIconBullet} />
-                  <h3 className={styles.capTitle}>{cap.title}</h3>
+                  <Icon className={styles.featureIcon} aria-hidden="true" />
+                  <h3 className={styles.capTitle}>{title}</h3>
                 </div>
-                <p className={styles.capDesc}>{cap.description}</p>
-              </div>
+                <p className={styles.capDesc}>{description}</p>
+                <ul className={styles.featureBenefits}>
+                  {benefits.map((benefit) => (
+                    <li key={benefit}>{benefit}</li>
+                  ))}
+                </ul>
+              </article>
             ))}
           </div>
         </Container>
       </section>
 
-      {/* Benefits Section */}
       <section className={styles.benefitsSection}>
         <Container size="wide">
           <SectionHeading
-            label="EFFICIENCY GAINS"
-            title="Measurable Multipliers for Operational Growth."
-            description="Transform resource-intensive human bottlenecks into streamlined automated operations."
+            label="BUSINESS BENEFITS"
+            title="Benefits of AI Automation"
+            description="Automation can reduce repetitive handling, make workflows more consistent and help teams access information, while keeping people involved where judgement matters."
             align="left"
           />
-
           <div className={styles.benefitsGrid}>
-            {service.benefits.map((benefit, i) => (
-              <div key={benefit.title} className={styles.benefitCard}>
-                <span className={styles.benefitIndex}>0{i + 1}</span>
+            {service.benefits.map((benefit, index) => (
+              <article key={benefit.title} className={styles.benefitCard}>
+                <span className={styles.benefitIndex}>
+                  {String(index + 1).padStart(2, '0')}
+                </span>
                 <h3 className={styles.benefitTitle}>{benefit.title}</h3>
                 <p className={styles.benefitDesc}>{benefit.description}</p>
-              </div>
+              </article>
             ))}
           </div>
         </Container>
       </section>
 
-      {/* Process Section */}
       <section className={styles.section}>
         <Container size="wide">
           <SectionHeading
-            label="IMPLEMENTATION LIFECYCLE"
-            title="How We Deploy Enterprise AI Systems."
-            description="A secure four-stage roadmap guaranteeing data confidentiality, stability, and staff adoption."
-            align="center"
+            label="WHY GRACE TECHNOLOGIES"
+            title="Why Choose Grace Technologies?"
+            description="We focus on practical AI automation for UK businesses, taking time to understand workflows, agree scope and safeguards, and validate solutions with your team."
+            align="left"
           />
+        </Container>
+      </section>
 
+      <section className={styles.benefitsSection}>
+        <Container size="wide">
+          <SectionHeading
+            label="OUR APPROACH"
+            title="A Clear, Human-Centred Implementation"
+            description="We assess the process, agree safeguards and success measures, then test and refine the automation with your team."
+            align="left"
+          />
           <div className={styles.processGrid}>
             {service.process.map((step) => (
-              <div key={step.step} className={styles.processCard}>
+              <article key={step.step} className={styles.processCard}>
                 <div className={styles.stepNum}>{step.step}</div>
                 <h3 className={styles.stepTitle}>{step.title}</h3>
                 <p className={styles.stepDesc}>{step.description}</p>
-              </div>
+              </article>
             ))}
           </div>
         </Container>
       </section>
 
-      {/* FAQs Section */}
       <section className={styles.faqSection}>
         <Container size="narrow">
           <SectionHeading
-            label="SECURITY & COMPLIANCE"
-            title="AI Automation FAQs."
-            description="Clear answers regarding data governance, proprietary privacy, and technical integrations."
+            label="FREQUENTLY ASKED QUESTIONS"
+            title="Frequently Asked Questions About AI Automation"
+            description="Answers about workflows, integrations and the role of human review."
             align="center"
           />
-
           <FaqAccordion faqs={service.faqs} />
         </Container>
       </section>
 
-      {/* Consultation CTA */}
       <ServiceCTASection
-        title="Ready to Automate Your Manual Operations?"
-        description="Schedule a technical discovery session with our consultants to evaluate potential automation gains."
-        primaryCtaText="Book an AI Consultation"
+        title="Ready to Explore AI Automation?"
+        description="Tell us about a workflow or repetitive task and we’ll discuss a practical next step."
+        primaryCtaText="Get a Quote"
+        secondaryCtaText="Contact Us"
+        secondaryCtaHref="/contact"
         serviceTitle={service.title}
       />
     </div>

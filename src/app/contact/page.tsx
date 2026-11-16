@@ -16,16 +16,17 @@ import officesData from '@/config/offices.json';
 import styles from './contact.module.css';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Contact Grace Technologies | Discuss Your Project',
+  title: 'Contact Grace Technologies',
+  titleSuffix: 'AI Automation UK',
   description:
-    'Discuss your goals with Grace Technologies in the UK: website development, merchant account management, AI automation and digital marketing for your business.',
+    'Contact Grace Technologies to discuss AI automation solutions for your business and explore opportunities to streamline your operations.',
   canonicalPath: '/contact',
   keywords: [
-    'Contact technology company UK',
+    'AI Automation Services UK',
+    'AI Automation Company UK',
     'Grace Technologies contact',
-    'Website development consultation',
     'AI automation enquiry',
-    'Digital solutions consultation UK',
+    'Business Process Automation',
   ],
 });
 
@@ -53,7 +54,7 @@ export default function ContactPage() {
               <span className={styles.badge}>EXECUTIVE CONSULTATION</span>
               <h1 className={styles.heading}>Your Next Move Starts With a Conversation.</h1>
               <p className={styles.subheading}>
-                Start your next move with a conversation with our UK team about website development, merchant account management, AI automation or digital marketing.
+                Tell our UK team about the workflows you want to improve. We&apos;ll discuss practical AI automation options that fit your business and existing systems.
               </p>
 
               {/* UK Office Card */}

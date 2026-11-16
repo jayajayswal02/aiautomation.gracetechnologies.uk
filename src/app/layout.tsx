@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: SEO_CONFIG.defaultOgImage,
         width: 1200,
         height: 630,
-        alt: `${SEO_CONFIG.siteName} - British Corporate Excellence & Intelligent Technology`,
+        alt: `${SEO_CONFIG.siteName} AI Automation Services UK`,
       },
     ],
   },

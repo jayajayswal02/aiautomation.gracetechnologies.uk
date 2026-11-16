@@ -46,32 +46,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return constructMetadata({
       title: 'Client Case Study',
       description:
-        'Explore Grace Technologies client projects, from UK website development and brand identity to digital services delivered with Ank Square in India.',
+        'Explore selected Grace Technologies client partnerships and project case studies, including examples of our earlier digital delivery.',
       noIndex: true,
     });
   }
 
   return constructMetadata({
-    title: `${client.name} Case Study | ${client.project}`,
-    description: createCaseStudyDescription(client),
+    title: `${client.name} Case Study`,
+    description: `Explore ${client.name}'s case study with Grace Technologies, delivered in partnership with Ank Square in India.`,
     canonicalPath: `/client/${client.slug}`,
     keywords: [
       `${client.name} case study`,
-      `${client.category}`,
       'Grace Technologies client project',
-      'Technology delivery case study',
+      'Grace Technologies UK',
     ],
   });
-}
-
-function createCaseStudyDescription(client: ClientItem): string {
-  const description = `See how Grace Technologies and Ank Square helped ${client.name} with ${client.project.toLowerCase()}, in our UK-India case study.`;
-  if (description.length <= 160) {
-    return description;
-  }
-
-  const shortened = description.slice(0, 157).replace(/\s+\S*$/, '');
-  return `${shortened}...`;
 }
 
 export default function ClientDetailPage({ params }: Props) {

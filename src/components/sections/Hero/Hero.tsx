@@ -2,11 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import Container from '@/components/common/Container/Container';
 import Button from '@/components/common/Button/Button';
 import HeroVisual from './HeroVisual/HeroVisual';
-import { openEnquiryModal } from '@/utils/modal';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -28,7 +26,7 @@ export default function Hero() {
             >
               <span className={styles.badgePulse} />
               <span className={styles.badgeText}>
-                GLOBAL TECHNOLOGY PARTNERSHIP
+                AI AUTOMATION FOR BUSINESSES
               </span>
             </motion.div>
 
@@ -38,8 +36,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Technology and Digital Solutions for{' '}
-              <span className={styles.highlightText}>Growing Businesses</span>
+              Intelligent AI Automation Solutions for Modern Businesses
             </motion.h1>
 
             <motion.p
@@ -48,7 +45,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.35 }}
             >
-              Grace Technologies provides technology and digital solutions for growing UK businesses through website development, merchant account management, AI automation and digital marketing. We are UK-based and partnered with Ank Square in India.
+              Empower your business with intelligent AI automation solutions designed to streamline workflows, reduce repetitive tasks, improve operational efficiency and support smarter business decisions.
             </motion.p>
             <motion.div
               className={styles.actions}
@@ -56,15 +53,15 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              <Button href="/services" variant="primary" size="lg" icon>
-                Explore Our Services
+              <Button href="/contact" variant="primary" size="lg" icon>
+                Get a Quote
               </Button>
               <Button
+                href="/services/ai-automation"
                 variant="outline"
                 size="lg"
-                onClick={() => openEnquiryModal()}
               >
-                Book a Free Consultation
+                Explore AI Automation
               </Button>
             </motion.div>
 
@@ -81,8 +78,8 @@ export default function Hero() {
               </div>
               <div className={styles.metricDivider} />
               <div className={styles.metricItem}>
-                <span className={styles.metricNum}>4 Pillars</span>
-                <span className={styles.metricLabel}>Web, Merchant, AI & Growth</span>
+                <span className={styles.metricNum}>One Focus</span>
+                <span className={styles.metricLabel}>Practical AI Automation</span>
               </div>
               <div className={styles.metricDivider} />
               <div className={styles.metricItem}>

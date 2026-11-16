@@ -13,16 +13,17 @@ import { SEO_CONFIG } from '@/lib/seo/config';
 import styles from './about.module.css';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'About Grace Technologies | Our Expertise & Approach',
+  title: 'About Grace Technologies',
+  titleSuffix: 'AI Automation Company UK',
   description:
-    'About Grace Technologies: our UK team works with Ank Square in India on websites, merchant accounts, AI automation and digital marketing for business growth.',
+    'Learn about Grace Technologies, an AI automation-focused technology company helping businesses improve workflows and operational efficiency.',
   canonicalPath: '/about',
   keywords: [
-    'UK technology company',
-    'Technology solutions company',
-    'UK technology partner',
-    'Digital engineering services',
-    'UK India technology partnership',
+    'AI Automation Company UK',
+    'AI Automation Services UK',
+    'Business Process Automation',
+    'AI Workflow Automation',
+    'Custom AI Integration',
   ],
 });
 
@@ -52,7 +53,7 @@ export default function AboutPage() {
                 Combining British Corporate Elegance With Global Technology Prowess.
               </h1>
               <p className={styles.heroSubtitle}>
-                Grace Technologies combines British corporate elegance with global technology prowess, partnering with Ank Square in India to deliver website development, merchant account management, AI automation and digital marketing.
+                Grace Technologies partners with Ank Square in India to deliver practical AI automation, streamline business workflows and integrate intelligent systems around each client&apos;s needs.
               </p>
             </div>
 
@@ -92,7 +93,7 @@ export default function AboutPage() {
               <span className={styles.mvTag}>OUR MISSION</span>
               <h3 className={styles.mvTitle}>Empowering Commercial Ambition Through Intelligent Systems.</h3>
               <p className={styles.mvDesc}>
-                To engineer bespoke, reliable, and scalable digital solutions that streamline operations, elevate brand authority, and unlock compounding commercial opportunities for the enterprises we serve.
+                To deliver bespoke, reliable AI automation that streamlines operations, reduces repetitive work and helps businesses make better-informed decisions.
               </p>
             </div>
 

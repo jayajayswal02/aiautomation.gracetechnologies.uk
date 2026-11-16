@@ -16,18 +16,25 @@ import GlobalOffices from '@/components/sections/GlobalOffices/GlobalOffices';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Digital & Technology Solutions UK',
+  title: 'AI Automation Services UK',
   description:
-    'UK-based Grace Technologies partners with Ank Square for website development, merchant account management, AI automation and digital marketing.',
+    'Grace Technologies delivers AI automation solutions for UK businesses, helping streamline workflows, automate repetitive tasks and improve operational efficiency.',
   canonicalPath: '/',
   keywords: [
-    'Technology company UK',
-    'Digital solutions company',
-    'Business technology services',
-    'Website development UK',
-    'AI automation services UK',
-    'Merchant account management',
-    'Digital marketing agency UK',
+    'AI Automation Services UK',
+    'AI Automation Company UK',
+    'AI Automation Solutions',
+    'Business Process Automation',
+    'AI Workflow Automation',
+    'AI Solutions for Businesses',
+    'Intelligent Business Automation',
+    'AI Chatbot Solutions',
+    'Customer Support Automation',
+    'Workflow Automation Services',
+    'Repetitive Task Automation',
+    'Custom AI Integration',
+    'Business Process Optimization',
+    'AI-powered Business Solutions',
   ],
 });
 
@@ -65,12 +72,12 @@ export default function HomePage() {
 
       {/* SECTION 10 – FINAL CTA */}
       <CTASection
-        title="Your Next Move Starts With a Conversation."
-        description="Let's discuss your ideas, challenges and opportunities. Together, we can build something meaningful."
-        primaryCtaText="Start a Conversation"
-        primaryCtaHref="#contact-section"
-        secondaryCtaText="Explore Capabilities"
-        secondaryCtaHref="/services"
+        title="Make Your Business More Efficient with AI Automation."
+        description="Let’s identify the repetitive work and workflows where practical AI automation can make a difference."
+        primaryCtaText="Get a Quote"
+        primaryCtaHref="/contact"
+        secondaryCtaText="Explore AI Automation"
+        secondaryCtaHref="/services/ai-automation"
       />
 
       {/* SECTION 10 – CONTACT SECTION */}

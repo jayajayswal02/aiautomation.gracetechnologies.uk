@@ -40,7 +40,7 @@ export default function CompanyIntro() {
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Grace Technologies combines technology and business expertise to help UK companies move forward. We provide website development, merchant account management, AI automation and digital marketing in partnership with Ank Square in India.
+              AI automation uses software, connected workflows and AI-assisted steps to handle repeatable tasks, while people review exceptions and decisions that need judgement. Grace Technologies helps UK businesses identify practical opportunities and design automation around their systems and goals, in partnership with Ank Square in India.
             </motion.p>
 
             <motion.div
@@ -75,7 +75,7 @@ export default function CompanyIntro() {
               <div className={styles.cardContent}>
                 <p className={styles.cardHeading}>Technology That Delivers Real Results.</p>
                 <p className={styles.cardText}>
-                  At Grace Technologies, we combine strategic business insight with technical excellence to deliver solutions that create lasting value. From software and mobile application development to AI automation and digital services, every project is strategically managed in the United Kingdom and executed by our dedicated technology delivery partner, Ank Square Private Limited, India. This approach enables us to deliver scalable, efficient, and high-quality solutions aligned with our clients' business objectives.                </p>
+                  At Grace Technologies, we combine strategic business insight with technical expertise to deliver AI automation that addresses practical operational needs. Projects are managed in the United Kingdom and delivered in partnership with Ank Square Private Limited in India, with solutions tailored to each client’s systems and objectives.                </p>
                 <div className={styles.valuesList}>
                   <div className={styles.valueItem}>
                     <div className={styles.valueCheck}>✓</div>
@@ -88,7 +88,7 @@ export default function CompanyIntro() {
                     <div className={styles.valueCheck}>✓</div>
                     <div>
                       <p className={styles.valTitle}>Tailored Technology Solutions</p>
-                      <p className={styles.valDesc}>Developing custom, scalable, and maintainable solutions designed around your business needs.</p>
+                      <p className={styles.valDesc}>Designing practical automation around your business processes and existing systems.</p>
                     </div>
                   </div>
                   <div className={styles.valueItem}>

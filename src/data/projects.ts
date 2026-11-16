@@ -4,7 +4,7 @@ export interface ProjectItem {
   id: string;
   slug: string;
   title: string;
-  category: 'Website Development' | 'Merchant Account Management' | 'AI Automation' | 'Digital Marketing';
+  category: 'Client Work' | 'AI Automation';
   client: string;
   location: string;
   year: string;

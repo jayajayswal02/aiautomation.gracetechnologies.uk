@@ -142,15 +142,6 @@ export default async function LocationServicePage({ params }: LocationPageProps)
   const faqSchema = getFaqSchema(locationFaqs);
 
   // Map service number for styling badge
-  const serviceNumberMap: Record<string, string> = {
-    'website-development': '01',
-    'ai-automation': '02',
-    'merchant-account-management': '03',
-    'digital-marketing': '04',
-  };
-
-  const serviceNumber = serviceNumberMap[service.slug] || '01';
-
   return (
     <div className={styles.page}>
       <JsonLd data={[serviceSchema, breadcrumbSchema, faqSchema]} />
@@ -168,7 +159,7 @@ export default async function LocationServicePage({ params }: LocationPageProps)
       {/* Dynamic Location Hero */}
       <ServiceDetailHero
         serviceId={service.slug}
-        number={serviceNumber}
+        number="01"
         tagline={`${cityData.city.toUpperCase()}, ${cityData.country.toUpperCase()}`}
         headline={`${service.primaryKeyword} in ${cityData.city}`}
         description={`Grace Technologies delivers high-impact ${service.name.toLowerCase()} for forward-thinking enterprises in ${cityData.city}, ${cityData.state}. Engineered for speed, security, and measurable commercial growth.`}

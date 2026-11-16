@@ -35,7 +35,7 @@ export default function LocationNavigation({
         </div>
         <h3 className={styles.title}>{serviceTitle} Across the United Kingdom</h3>
         <p className={styles.description}>
-          Grace Technologies delivers UK-governed digital solutions, high-performance web development, and AI automation to clients across England, Scotland, Wales, and Northern Ireland via seamless remote and executive consultations.
+          Grace Technologies helps businesses across England, Scotland, Wales, and Northern Ireland explore practical AI automation through remote consultations and tailored implementation.
         </p>
       </div>
 

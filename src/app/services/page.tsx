@@ -10,16 +10,16 @@ import { SEO_CONFIG } from '@/lib/seo/config';
 import styles from './services.module.css';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Technology & Digital Services',
+  title: 'AI Automation Services UK',
   description:
-    'Explore website development, merchant account management, AI automation and digital marketing from Grace Technologies in the UK, with Ank Square in India.',
+    'Explore AI automation services from Grace Technologies, including workflow automation, intelligent chatbots, business process automation and custom AI integration.',
   canonicalPath: '/services',
   keywords: [
-    'Business technology services UK',
-    'Technology solutions UK',
-    'Custom software development',
-    'Enterprise digital services',
-    'AI automation solutions',
+    'AI Automation Services UK',
+    'AI Automation Company UK',
+    'Business Process Automation',
+    'AI Workflow Automation',
+    'AI Solutions for Businesses',
   ],
 });
 
@@ -43,11 +43,12 @@ export default function ServicesPage() {
 
       {/* Conversion CTA */}
       <ServiceCTASection
-        title="Ready to Transform Your Digital Infrastructure?"
-        description="Speak with our strategic consulting team in the UK and discover how our collaborative approach accelerates delivery."
-        primaryCtaText="Discuss Your Project"
-        secondaryCtaText="Explore Case Studies"
-        secondaryCtaHref="/projects"
+        title="Ready to Explore AI Automation?"
+        description="Tell us about a workflow or repetitive task and we’ll discuss a practical next step."
+        primaryCtaText="Get a Quote"
+        secondaryCtaText="Contact Us"
+        secondaryCtaHref="/contact"
+        serviceTitle="AI Automation"
       />
     </div>
   );

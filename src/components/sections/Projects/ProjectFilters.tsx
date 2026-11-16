@@ -6,10 +6,8 @@ import styles from './ProjectFilters.module.css';
 
 export const CATEGORIES = [
   'All Projects',
-  'Website Development',
-  'Merchant Account Management',
+  'Client Work',
   'AI Automation',
-  'Digital Marketing',
 ] as const;
 
 export type CategoryFilter = (typeof CATEGORIES)[number];
@@ -27,8 +25,6 @@ export default function ProjectFilters({
     <div className={styles.filtersContainer} role="tablist" aria-label="Project category filters">
       {CATEGORIES.map((category) => {
         const isActive = activeCategory === category;
-        const displayLabel = category === 'Merchant Account Management' ? 'Merchant Solutions' : category;
-
         return (
           <button
             key={category}
@@ -44,11 +40,10 @@ export default function ProjectFilters({
                 transition={{ type: 'spring', stiffness: 350, damping: 30 }}
               />
             )}
-            <span className={styles.btnText}>{displayLabel}</span>
+            <span className={styles.btnText}>{category}</span>
           </button>
         );
       })}
     </div>
   );
 }
-

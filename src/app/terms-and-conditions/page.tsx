@@ -8,7 +8,7 @@ import styles from './legal.module.css';
 export const metadata: Metadata = constructMetadata({
   title: 'Terms & Conditions',
   description:
-    'Review the terms for Grace Technologies’ website and UK services, including website development, merchant account support and our Ank Square partnership.',
+    'Review the terms for the Grace Technologies website and AI automation services, including our UK business and Ank Square partnership.',
   canonicalPath: '/terms-and-conditions',
 });
 
@@ -37,14 +37,7 @@ export default function TermsAndConditionsPage() {
           <section className={styles.legalSection}>
             <h2>2. Nature of Services & Partnership</h2>
             <p>
-              Grace Technologies is a United Kingdom business and technology consultancy strategically partnered with Ank Square Private Limited, India. Both companies are distinct, independent legal entities operating collaboratively under contract to deliver client solutions.
-            </p>
-          </section>
-
-          <section className={styles.legalSection}>
-            <h2>3. Merchant Account Advisory Disclaimer</h2>
-            <p>
-              Grace Technologies provides merchant account onboarding support, document preparation, and operational coordination. We are neither a bank, credit institution, nor payment processor. We do not provide financial or banking services and do not warrant or guarantee merchant account approvals, which remain solely at the discretion of independent acquiring banks.
+              Grace Technologies is a United Kingdom business providing AI automation services and is strategically partnered with Ank Square Private Limited, India. Both companies are distinct, independent legal entities operating collaboratively under contract. The scope and deliverables for each engagement are set out in the applicable agreement.
             </p>
           </section>
 

@@ -62,7 +62,7 @@
         {
           "type": "website",
           "title": "Dynamic Construction Portfolio Website",
-          "description": "Professional website development showcasing Sah Constructions' completed projects, construction capabilities, and technical expertise. Includes project galleries, detailed case studies, team information, and client testimonials. Optimized for search engines and mobile devices.",
+          "description": "A digital portfolio presenting Sah Constructions' completed projects, construction capabilities, and technical expertise through project galleries, detailed case studies, team information, and client testimonials.",
           "images": [
             "/clients/sah-constructions/website.png"
           ],
@@ -127,8 +127,8 @@
       "logo": "/clients/aprajita-strategics/logo.png",
       "category": "Construction Consultancy, Architecture & Engineering",
       "location": "India",
-      "project": "Corporate Brand Identity & Website Development",
-      "summary": "Corporate branding and professional website development for Aprajita Strategics, creating a strong digital presence to showcase its architectural, structural engineering, construction management, industrial infrastructure and technical consultancy services.",
+      "project": "Corporate Brand Identity & Digital Portfolio",
+      "summary": "Corporate branding and a digital portfolio for Aprajita Strategics, presenting its architectural, structural engineering, construction management, industrial infrastructure and technical consultancy services.",
       "testimonial": "Working with Ank Square was a great experience. Their team understood our business requirements and translated our vision into a professional brand identity and website. The website presents our diverse engineering and construction consultancy services in a clear, organized and professional manner. We appreciate their creativity, attention to detail and commitment throughout the project.",
       "metrics": "Corporate Brand Identity • Responsive Website • Engineering Services Showcase",
       "workDone": [
@@ -142,8 +142,8 @@
         },
         {
           "type": "website",
-          "title": "Professional Website Design & Development",
-          "description": "Modern, responsive website design for Aprajita Strategics, showcasing their engineering and construction services with an emphasis on user experience and conversion optimization.",
+          "title": "Engineering & Construction Digital Portfolio",
+          "description": "A clear, responsive digital portfolio presenting Aprajita Strategics' engineering and construction consultancy services.",
           "images": [
             "/clients/aprajita-strategics/website.png"
           ],

@@ -1,8 +1,19 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const pathSegments = pathname.split('/').filter(Boolean);
+  const legacyServicePath =
+    pathSegments[0] === 'services' &&
+    pathSegments[1] !== undefined &&
+    pathSegments[1] !== 'ai-automation';
+
+  if (pathname === '/ai-automation' || legacyServicePath) {
+    const destination = request.nextUrl.clone();
+    destination.pathname = '/services/ai-automation';
+    return NextResponse.redirect(destination, 301);
+  }
 
   // Only protect /admin routes
   if (pathname.startsWith('/admin')) {
@@ -26,6 +37,9 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/admin/:path*'],
+  matcher: [
+    '/admin/:path*',
+    '/ai-automation',
+    '/services/:path*',
+  ],
 };
-

@@ -22,6 +22,8 @@ export default function robots(): MetadataRoute.Robots {
           'PerplexityBot',
           'ChatGPT-User',
           'OAI-SearchBot',
+          'ClaudeBot',
+          'Claude-SearchBot',
         ],
         allow: '/',
         disallow: ['/admin/', '/api/'],

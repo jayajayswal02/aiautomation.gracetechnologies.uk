@@ -34,25 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services/website-development`,
-      lastModified: new Date('2026-11-01'),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services/merchant-account-management`,
-      lastModified: new Date('2026-11-01'),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/services/ai-automation`,
-      lastModified: new Date('2026-11-01'),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services/digital-marketing`,
       lastModified: new Date('2026-11-01'),
       changeFrequency: 'weekly' as const,
       priority: 0.9,

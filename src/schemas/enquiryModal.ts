@@ -11,13 +11,7 @@ export const quickEnquirySchema = z
         message: 'Please enter a valid name using letters only',
       }),
     serviceType: z.enum(
-      [
-        'Website Development',
-        'Merchant Account Management',
-        'AI Automation',
-        'Digital Marketing',
-        'Other Consultation',
-      ],
+      ['AI Automation'],
       {
         message: 'Please choose a service',
       }

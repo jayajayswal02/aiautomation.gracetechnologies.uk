@@ -54,10 +54,10 @@ export default function ServiceDetailHero({
                 icon
                 onClick={() => openEnquiryModal(serviceTitle || tagline)}
               >
-                Consult On This Service
+                Get a Quote
               </Button>
-              <Button href="#capabilities" variant="outline" size="lg">
-                View Capabilities
+              <Button href="/contact" variant="outline" size="lg">
+                Contact Us
               </Button>
             </div>
           </motion.div>

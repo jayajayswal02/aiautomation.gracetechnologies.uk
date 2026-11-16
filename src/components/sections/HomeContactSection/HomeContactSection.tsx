@@ -26,7 +26,7 @@ export default function HomeContactSection() {
             <span className={styles.badge}>EXECUTIVE CONSULTATION</span>
             <h2 className={styles.heading}>Contact Us</h2>
             <p className={styles.subheading}>
-              Whether you need scalable Next.js engineering, merchant account advisory, AI automation pipelines, or data-driven digital growth, our senior team is ready to assist.
+              Tell us about the repetitive tasks and workflows you want to improve. Our team can help you explore practical AI automation for your business.
             </p>
 
             <div className={styles.benefitsList}>

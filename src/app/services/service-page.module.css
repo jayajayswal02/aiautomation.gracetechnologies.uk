@@ -47,6 +47,27 @@
   flex-shrink: 0;
 }
 
+.featureIcon {
+  color: var(--color-accent);
+  flex: 0 0 auto;
+  font-size: 1.6rem;
+}
+
+.featureBenefits {
+  display: grid;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  color: var(--color-text-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.featureBenefits li::before {
+  content: '✓';
+  color: var(--color-accent);
+  margin-right: 0.5rem;
+}
+
 .capTitle {
   font-size: 1.1rem;
   font-weight: 700;
@@ -165,4 +186,3 @@
     grid-template-columns: 1fr;
   }
 }
-

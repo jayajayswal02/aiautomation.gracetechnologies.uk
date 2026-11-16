@@ -7,7 +7,6 @@ import SectionHeading from '@/components/common/SectionHeading/SectionHeading';
 import Button from '@/components/common/Button/Button';
 import { SERVICES_DATA } from '@/config/site';
 import ServiceVisual from './ServiceVisual';
-import { openEnquiryModal } from '@/utils/modal';
 import styles from './ServicesOverview.module.css';
 
 interface ServicesOverviewProps {
@@ -21,21 +20,19 @@ export default function ServicesOverview({
     <section id="services-overview" className={styles.section}>
       <Container size="wide">
         <SectionHeading
-          label="CORE CAPABILITIES"
-          title="Our Services"
-          description="Integrated technology and business solutions that simplify operations, strengthen digital presence, and drive sustainable business growth."
+          label="AI AUTOMATION"
+          title="Automation Built Around Your Business"
+          description="Practical AI automation to streamline workflows, reduce repetitive tasks and support more efficient operations."
           align="center"
           headingLevel={headingLevel}
         />
 
         <div className={styles.servicesList}>
-          {SERVICES_DATA.map((service, index) => {
-            const isReversed = index % 2 !== 0;
-
+          {SERVICES_DATA.map((service) => {
             return (
               <motion.div
                 key={service.id}
-                className={`${styles.serviceRow} ${isReversed ? styles.rowReversed : ''}`}
+                className={styles.serviceRow}
                 initial={{ opacity: 0, y: 35 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
@@ -67,19 +64,12 @@ export default function ServicesOverview({
 
                   <div className={styles.actions}>
                     <Button
+                      href={service.route}
                       variant="primary"
                       size="md"
                       icon
-                      onClick={() => openEnquiryModal(service.title)}
                     >
-                      Let's Talk
-                    </Button>
-                    <Button
-                      href={service.route}
-                      variant="outline"
-                      size="md"
-                    >
-                      Explore {service.title}
+                      Learn More
                     </Button>
                   </div>
                 </div>

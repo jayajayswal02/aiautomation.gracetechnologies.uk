@@ -24,16 +24,18 @@ import styles from './partnership.module.css';
 import Logo from "../../../public/logo/logo.png"
 
 export const metadata: Metadata = constructMetadata({
-  title: 'UK–India Strategic Partnership | Grace Technologies & Ank Square',
+  title: 'AI Automation Delivery Partnership',
+  titleSuffix: 'Grace Technologies & Ank Square',
   description:
-    'See how UK-based Grace Technologies and Indian partner Ank Square combine business leadership and engineering to deliver digital services for UK clients.',
+    'Learn how Grace Technologies and Ank Square combine UK business leadership and engineering expertise to deliver practical AI automation for businesses.',
   canonicalPath: '/partnership',
   keywords: [
     'UK India technology partnership',
     'Bilateral technology alliance',
     'Grace Technologies and Ank Square',
-    'Cross-border digital transformation',
-    'UK technology consultancy India delivery',
+    'AI Automation Services UK',
+    'Business Process Automation',
+    'AI Workflow Automation',
   ],
 });
 
@@ -64,7 +66,7 @@ export default function PartnershipPage() {
                 Indian Technology Expertise.
               </h1>
               <p className={styles.heroSubtitle}>
-                Grace Technologies is a UK-based service company partnered with Ank Square in India. Together, we bring British business vision and Indian technology expertise to deliver digital systems and business transformation for our clients.
+                Grace Technologies is a UK-based AI automation company partnered with Ank Square in India. Together, we combine business understanding and engineering expertise to design and implement practical automation for our clients.
               </p>
             </div>
 
@@ -122,8 +124,8 @@ export default function PartnershipPage() {
                 <ul className={styles.contribList}>
                   <li>Commercial requirements scoping and ROI analysis</li>
                   <li>Client advisory and British corporate governance</li>
-                  <li>Executive milestone oversight & SLA guarantee</li>
-                  <li>Merchant account operational advisory</li>
+                  <li>Executive delivery oversight</li>
+                  <li>AI automation scoping and implementation planning</li>
                 </ul>
               </div>
 

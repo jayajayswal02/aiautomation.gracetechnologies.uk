@@ -14,9 +14,9 @@ import clientsConfig from '@/config/clients.json';
 import styles from './client.module.css';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Client Partnerships & Case Studies | Grace Technologies',
+  title: 'Client Partnerships & Case Studies',
   description:
-    'Discover client projects delivered by Grace Technologies, from website development and brand identity to digital platforms for businesses in the UK and beyond.',
+    'Discover selected Grace Technologies client partnerships, including current AI automation work and examples of our earlier digital delivery.',
   canonicalPath: '/client',
   keywords: [
     'Grace Technologies clients',
@@ -48,7 +48,7 @@ export default function ClientsIndexPage() {
           <SectionHeading
             label="CLIENT PARTNERSHIPS"
             title="Trusted by Visionary Enterprises."
-            description="Trusted by visionary enterprises, we deliver brand identities, website development and digital projects for businesses in the UK and beyond."
+            description="Explore selected client partnerships and project work delivered for businesses in the UK and beyond."
             align="center"
             headingLevel="h1"
           />
@@ -72,11 +72,11 @@ export default function ClientsIndexPage() {
 
       {/* Conversion CTA */}
       <ServiceCTASection
-        title="Ready to Build Your Flagship Business Platform?"
-        description="Partner with our bilateral UK–India advisory and engineering team today for end-to-end technical execution."
-        primaryCtaText="Consult With Our Team"
-        secondaryCtaText="Explore Our Capabilities"
-        secondaryCtaHref="/services"
+        title="Ready to Explore AI Automation?"
+        description="Talk with our UK team about the workflows and repetitive tasks you want to improve."
+        primaryCtaText="Get a Quote"
+        secondaryCtaText="Explore AI Automation"
+        secondaryCtaHref="/services/ai-automation"
       />
     </div>
   );

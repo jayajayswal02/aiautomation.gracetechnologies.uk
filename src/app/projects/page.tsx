@@ -15,16 +15,15 @@ import { ProjectItem } from '@/data/projects';
 import styles from './projects.module.css';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Our Projects & Case Studies | Grace Technologies',
+  title: 'Our Projects & Case Studies',
   description:
-    'Browse Grace Technologies case studies for UK and international clients, from website development and merchant services to AI automation and marketing.',
+    'Explore selected Grace Technologies client case studies, including current AI automation work and examples of our earlier digital delivery.',
   canonicalPath: '/projects',
   keywords: [
     'Grace Technologies projects',
-    'Web development case studies',
-    'Merchant management case studies',
     'AI automation examples UK',
-    'Digital transformation portfolio',
+    'AI Automation Services UK',
+    'Business Process Automation',
   ],
 });
 
@@ -52,7 +51,7 @@ export default function ProjectsPage() {
           <SectionHeading
             label="OUR PORTFOLIO"
             title="Ideas Into Real Digital Solutions."
-            description="See how ideas become real digital solutions through our website development, merchant operations, AI automation and digital marketing projects."
+            description="Explore selected client partnerships, examples of our earlier digital delivery and our current AI automation work."
             align="center"
             headingLevel="h1"
           />
@@ -67,11 +66,11 @@ export default function ProjectsPage() {
  
       {/* Conversion CTA with modal trigger */}
       <ServiceCTASection
-        title="Have an Ambitious Project in Mind?"
-        description="Connect with our UK consulting team to discuss your architectural roadmap, specifications, and commercial timeline."
-        primaryCtaText="Initiate Project Discovery"
-        secondaryCtaText="Explore Capabilities"
-        secondaryCtaHref="/services"
+        title="Ready to Improve a Business Workflow?"
+        description="Talk with our UK team about your processes and explore where practical AI automation could help."
+        primaryCtaText="Get a Quote"
+        secondaryCtaText="Explore AI Automation"
+        secondaryCtaHref="/services/ai-automation"
       />
     </div>
   );

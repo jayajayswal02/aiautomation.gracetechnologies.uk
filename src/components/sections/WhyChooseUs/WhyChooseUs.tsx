@@ -22,8 +22,8 @@ const strengths = [
   {
     icon: MemoryIcon,
     number: '02',
-    title: 'Modern Technology',
-    description: 'Built on Next.js, TypeScript, cloud microservices, and leading enterprise AI frameworks with zero technical debt.',
+    title: 'Thoughtful AI Integration',
+    description: 'We consider your existing tools, data handling needs and review requirements when shaping an AI automation approach.',
   },
   {
     icon: HubIcon,
@@ -40,8 +40,8 @@ const strengths = [
   {
     icon: ViewQuiltIcon,
     number: '05',
-    title: 'Integrated Digital Capabilities',
-    description: 'Unified cross-functional capability covering web engineering, payment operations, data automation, and digital reach.',
+    title: 'Workflow-Focused Automation',
+    description: 'We focus on connecting repeatable tasks and business processes, with clear handling for exceptions that need people.',
   },
   {
     icon: PublicIcon,

@@ -3,7 +3,7 @@ import { SEO_CONFIG } from './config';
 export function getOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': ['Organization', 'ProfessionalService'],
+    '@type': 'Organization',
     '@id': SEO_CONFIG.organizationId,
     name: SEO_CONFIG.siteName,
     legalName: SEO_CONFIG.legalName,
@@ -17,9 +17,6 @@ export function getOrganizationSchema() {
     description: SEO_CONFIG.defaultDescription,
     email: SEO_CONFIG.contact.uk.email,
     telephone: SEO_CONFIG.contact.uk.phone,
-    priceRange: '££',
-    currenciesAccepted: 'GBP, USD, EUR, INR',
-    paymentAccepted: 'Bank Transfer, Stripe, Credit Card',
     address: {
       '@type': 'PostalAddress',
       streetAddress: SEO_CONFIG.contact.uk.addressLines[0],
@@ -28,41 +25,24 @@ export function getOrganizationSchema() {
       postalCode: SEO_CONFIG.contact.uk.postalCode,
       addressCountry: SEO_CONFIG.contact.uk.countryCode,
     },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: SEO_CONFIG.contact.uk.geo.latitude,
-      longitude: SEO_CONFIG.contact.uk.geo.longitude,
-    },
     areaServed: [
       {
         '@type': 'Country',
         name: 'United Kingdom',
       },
-      {
-        '@type': 'AdministrativeArea',
-        name: 'Greater London',
-      },
-      {
-        '@type': 'AdministrativeArea',
-        name: 'England',
-      },
-      {
-        '@type': 'Country',
-        name: 'India',
-      },
     ],
     knowsAbout: [
-      'Website Development',
-      'Next.js Full-Stack Engineering',
-      'AI Automation & Intelligent Workflows',
-      'Merchant Account Operations',
-      'Digital Marketing & Search Engine Optimisation (SEO)',
-      'Generative Engine Optimisation (GEO)',
-      'Answer Engine Optimisation (AEO)',
-      'B2B Organic Lead Generation UK',
-      'High-Intent Client Acquisition Architecture',
+      'AI Automation Services',
+      'Business Process Automation',
+      'AI Workflow Automation',
+      'Intelligent Business Automation',
+      'AI Chatbot Development',
+      'Customer Support Automation',
+      'Workflow Automation Solutions',
+      'Business Process Optimization',
+      'Custom AI Integration',
     ],
-    sameAs: SEO_CONFIG.socialLinks,
+    sameAs: [SEO_CONFIG.mainSiteUrl, ...SEO_CONFIG.socialLinks],
   };
 }
 
@@ -98,18 +78,6 @@ export function getServiceSchema({
     {
       '@type': 'Country',
       name: 'United Kingdom',
-    },
-    {
-      '@type': 'AdministrativeArea',
-      name: 'Greater London',
-    },
-    {
-      '@type': 'AdministrativeArea',
-      name: 'England',
-    },
-    {
-      '@type': 'Country',
-      name: 'India',
     },
   ];
 
@@ -224,7 +192,7 @@ export function getBlogIndexSchema(posts: Array<{ title: string; url: string; da
     '@id': `${SEO_CONFIG.siteUrl}/blog#collection`,
     url: `${SEO_CONFIG.siteUrl}/blog`,
     name: 'Grace Technologies Insights & Thought Leadership',
-    description: 'Expert publications on UK website development, enterprise AI automation, answer engine optimization (AEO), generative engine optimization (GEO), and merchant operations.',
+    description: 'Practical insights on AI automation, business process optimization, intelligent workflows, and custom AI integration.',
     publisher: {
       '@id': SEO_CONFIG.organizationId,
     },
@@ -238,4 +206,3 @@ export function getBlogIndexSchema(posts: Array<{ title: string; url: string; da
     })),
   };
 }
-

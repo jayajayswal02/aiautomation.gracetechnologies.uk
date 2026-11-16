@@ -1,0 +1,43 @@
+# Grace Technologies – AI Automation
+
+> Grace Technologies provides AI Automation solutions designed to help businesses streamline workflows, reduce repetitive manual tasks and improve operational efficiency.
+
+## Official Websites
+
+- [Main company website](https://www.gracetechnologies.uk/) – Main Grace Technologies website.
+- [AI Automation website](https://aiautomation.gracetechnologies.uk/) – Dedicated website for Grace Technologies AI Automation services.
+
+## Main Service: AI Automation
+
+Grace Technologies works with UK businesses to assess, design and implement practical AI automation around their workflows and existing systems. Projects are scoped with the client, with integrations, data handling, safeguards and success measures agreed before implementation. Solutions are tested for expected outcomes and exceptions, with human review included wherever judgement is important.
+
+Service areas described on this website include:
+
+- **Business process automation** – Automating repetitive, rules-based processes to reduce manual handling.
+- **AI-powered workflow automation** – Connecting business tools and adding AI-assisted steps, with review points for decisions that need human oversight.
+- **Intelligent chatbots and virtual assistants** – Answering common questions and guiding users through well-defined tasks.
+- **Customer support automation** – Categorising requests, finding relevant information and routing enquiries to the right people.
+- **Data processing automation** – Extracting, validating and transferring structured data between approved business systems.
+- **Lead management automation** – Organising enquiries, applying agreed qualification rules and routing leads to the appropriate team.
+- **AI integration and custom automation** – Fitting AI capabilities to selected software, existing processes and agreed requirements.
+
+Capabilities and integrations depend on each business's requirements, systems and agreed project scope.
+
+## Target Audience
+
+- UK-based businesses
+- Startups and entrepreneurs
+- Small and medium-sized businesses
+- Growing organisations
+- Businesses looking to automate repetitive processes
+
+## Important Pages
+
+- [Homepage](https://aiautomation.gracetechnologies.uk/) – Overview of Grace Technologies AI Automation.
+- [AI Automation services](https://aiautomation.gracetechnologies.uk/services) – Overview of the AI Automation service.
+- [AI Automation service details and FAQs](https://aiautomation.gracetechnologies.uk/services/ai-automation) – Capabilities, implementation approach and frequently asked questions. The FAQs are part of this page; there is no separate FAQ route.
+- [About Grace Technologies](https://aiautomation.gracetechnologies.uk/about) – Company background and delivery partnership.
+- [Contact](https://aiautomation.gracetechnologies.uk/contact) – Discuss an AI Automation requirement with the team.
+- [Blog and industry insights](https://aiautomation.gracetechnologies.uk/blog) – Articles about AI Automation and related business workflows.
+- [Privacy policy](https://aiautomation.gracetechnologies.uk/privacy-policy)
+- [Terms and conditions](https://aiautomation.gracetechnologies.uk/terms-and-conditions)
